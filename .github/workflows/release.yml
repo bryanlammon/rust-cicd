@@ -26,5 +26,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           RUSTTARGET: ${{ matrix.target }}
+          EXTRA_FILES: "readme.md license.md"
           ARCHIVE_TYPES: ${{ matrix.archive }}
-          
+
